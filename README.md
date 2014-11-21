@@ -1,7 +1,7 @@
 Not-So-Annoying-Whitespace-Fixer
 ================================
 
-A Brackets extension that trims trailing whitespace (except for the line the cursor is currently on).
+A Brackets extension that trims trailing whitespace, but doesn't touch the line the cursor is currently on, or whitespace-only lines.
 Forked from @hamdanjaveed to remove the annoying new line at the end of the file feature.
 
 
