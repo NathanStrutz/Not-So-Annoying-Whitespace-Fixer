@@ -11,7 +11,6 @@
 
 /** Not So Annoying Whitespace Fixer Extension
     Trims trailing whitespace, but NOT the line the cursor is currently on.
-    Ensures that the last line is a \n.
 */
 
 define(function (require, exports, module) {
@@ -40,19 +39,6 @@ define(function (require, exports, module) {
             }
 
             doc.batchOperation(function() {
-                // if the text does not have a new line at the end
-                if (!/\n$/.test(text)) {
-                    // append a new line to the end of the text
-                    var lastLine = rawLines[rawLines.length - 1];
-                    doc.replaceRange(lastLine + "\n", {
-                        line: rawLines.length - 1,
-                        ch: 0
-                    }, {
-                        line: rawLines.length - 1,
-                        ch: lastLine.length
-                    });
-                }
-
                 if (!linesToTrim.length) return;
 
                 // for each line that needs to be trimmed, trim it
