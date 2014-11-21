@@ -2,18 +2,13 @@ Not-So-Annoying-Whitespace-Fixer
 ================================
 
 A Brackets extension that trims trailing whitespace (except for the line the cursor is currently on).
-Also as a bonus it ensures the file has a new line at the end.
+Forked from @hamdanjaveed to remove the annoying new line at the end of the file feature.
 
 
 Instructions
 ============
 
 Just save the file and it'll do its thing.
-
-Install within Brackets
-=======================
-
-Click the extension manager button within Brackets (in the toolbar to the right) and search for "Not So Annoying Whitespace Fixer". Click install.
 
 
 Install from URL
